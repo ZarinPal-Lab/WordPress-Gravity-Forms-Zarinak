@@ -2614,7 +2614,7 @@ class GFZarinPal_HANNANStd
 						توضیحات: '.$Description.'<br>
 						مبلغ: '.$Amount.' تومان<br>
 						</div>';
-					$Message .=  '<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script><script>Zarinak.setAuthority( ' . $Result->Authority . ');Zarinak.open();</script>';
+					$Message .=  '<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script><script>Zarinak.setAuthority("' . $Result->Authority . '");Zarinak.open();</script>';
 						
                 }
 
